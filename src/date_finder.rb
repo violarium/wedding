@@ -17,8 +17,9 @@ class DateFinder
           return true
         end
       end
-      false
     end
+
+    false
   end
 
   private
