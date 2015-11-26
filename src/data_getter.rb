@@ -19,13 +19,13 @@ class DataGetter
 
     browser.click_on 'Далее'
 
-    while browser.all('#ZagsList').length != 1 || browser.all('#ZagsList[disabled]').length == 1
+    while browser.all('#ZagsList option').length == 0
       sleep 1
     end
 
     browser.select 'комитет записи актов гражданского состояния администрации города Тулы', from: 'ZagsList'
 
-    while browser.all('#ZagsDayMM[disabled]').length == 1
+    while browser.all('#ZagsDayMM option').length == 0
       sleep 1
     end
 
